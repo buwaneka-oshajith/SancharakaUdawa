@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url('img/backg.jpg'); 
+    color: #fff;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.8); /* Gray transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+  input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  #previewContainer {
+    background-color: rgba(4, 4, 4, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    display: none;
+    text-align: center; /* Center the content horizontally */
+}
+
+#previewContent {
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+#previewContainer button {
+    margin-top: 10px;
+}
+
+  
+.agile-volt {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.agile-volt header,
+.agile-voltsub {
+    text-align: center;
+}
+
+.agile-voltsub table,
+.agile-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.agile-voltsub table,
+.agile-table table,
+.agile-voltsub table th,
+.agile-table table th,
+.agile-voltsub table td,
+.agile-table table td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.agile-voltsub .textbox {
+    margin-top: 20px;
+}
+
+.agile-voltsub .textbox .topic {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.agile-voltsub .textbox .points {
+    margin-top: 10px;
+}
+
+.agile-sign,
+.agile-date,
+.agile-name,
+.agile-email,
+.agile-address,
+.agile-person,
+.agile-position {
+    margin-top: 20px;
+}
+
+.agile-sign input,
+.agile-date input,
+.agile-name input,
+.agile-email input,
+.agile-address textarea,
+.agile-person input,
+.agile-position input,
+.agile-name textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.agile-sign input[type="file"],
+.agile-name input[type="file"] {
+    margin-top: 10px;
+}
+
+.agile-voltsub input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agile-voltsub input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (max-width: 600px) {
+    .agile-volt {
+        padding: 10px;
+    }
+
+    .agile-voltsub table,
+    .agile-table table {
+        font-size: 0.8em;
+    }
+}

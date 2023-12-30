@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Style Css -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Form</title>
+</head>
+<body>
+
+
+
+<section class="agile-volt"> 
+  <div class="agile-voltheader">
+
+  
+  </div>
+  <div class="agile-voltsub">
+    <h2>Exhibition Application Form</h2>
+</div>
+<div class="agile-name">
+  <form action="process_form.php" method="post" enctype="multipart/form-data" id="membershipForm">
+
+    <div class="agile-voltsub">
+      <h2>SANCHARAKA UDAWA 2024</h2>
+  </div>
+    <!-- Company Information -->
+    <label for="companyName">Company Name:</label>
+    <input type="text" name="companyName" required><br>
+
+    <label for="companyAddress">Company Address:</label>
+    <textarea name="companyAddress" required></textarea><br>
+
+    <label for="telephone">Telephone:</label>
+    <input type="tel" name="telephone" required><br>
+
+    <label for="mobile">Mobile:</label>
+    <input type="tel" name="mobile" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required><br>
+
+
+    <label for="contactPerson">Contact Person:</label>
+    <input type="text" name="contactPerson" required><br>
+
+    <label for="contactPersonPosition">Position of Contact Person:</label>
+    <input type="text" name="contactPersonPosition" required><br>
+
+    <!-- Membership Information -->
+    <label>Membership Type:</label>
+    <input type="radio" name="membershipType" value="associate" required> Associate Member<br>
+    <input type="radio" name="membershipType" value="nonAssociate" required> Non Associate Member<br>
+
+    <label>Company Size:</label>
+    <input type="radio" name="companySize" value="sme" required> SME<br><br>
+    <input type="radio" name="companySize" value="nonSme" required> Non-SME<br><br>
+
+
+    <!-- Stall Information -->
+    <P>We require 
+      <input type="text" name="units">
+      units/of 
+      <input type="text" name="sqm" >sqm.
+       Bare space/with shell scheme at the cost of LKR:
+       <input type="number" name="cost" >
+      Prefered stall No(s)
+    Option 1 <input type="text" name="opt1" > 
+    Option 2 <input type="text" name="opt2" >
+    Toatal cost of LKR:<input type="number" name="tcost" ></P>
+    <p>
+      All payments should be made by cheques drawn, in favour of "Sri Lanka Association of Inbound Tour Operators" and handed over to the Exhibition Secretariat, CDC Events, at the address mentioned below. If you wish to send a bank transfer please send to: "Sri Lanka Association Of Inbound Tour Operators" (A/C No. 102002779908, Bank Name - DFCC Bank PLC, Code - 7454, Branch & Code - Fort Super Grade Branch, 111, SWIFT Code - DFCCLKLX)<br>
+      We understand that the application fee is non-refundable except in the case (Only) of our application being declined. If accepted, we shall pay utmost attention to booth security and understand that loose security a attract crime will jeopardize our participation future events/shows conducted by the organizers. We hereby apply for joining "Sancharaka Udawa 2024". We agree to abide by the terms of application and exhibition rules and regulations set out by the organizer.
+      We understand that the above information will be included into the organizer's databank and the organizer can make use of our information for trade promotion purpose or pass it on to third parties.
+    </p>
+
+    <!-- Image Upload -->
+    <label for="signature">Signature:</label>
+    <input type="file" name="signature" accept="image/*" required><br>
+
+    <label for="seal">Seal of Company:</label>
+    <input type="file" name="seal" accept="image/*" required><br>
+
+    <!-- Date and Position -->
+    <label for="date">Date:</label>
+    <input type="date" name="date" required><br>
+
+    <label for="position">Position:</label>
+    <input type="text" name="position" required><br>
+
+    <!-- Preview and Submit -->
+    <button type="button" onclick="previewForm()">Preview</button>
+    <button type="submit" id="submitButton" style="display: none;">Confirm</button>
+  </form>
+  </div>
+  </section>
+
+  <div id="previewContainer" style="display: none;">
+    <!-- Preview content will be displayed here -->
+    <h2>Preview:</h2>
+    <div id="previewContent"></div>
+    <button type="button" onclick="editForm()">Edit</button>
+    <button type="button" onclick="submitForm()">Confirm</button>
+  </div>
+
+  <script>
+    function previewForm() {
+      // Collect form values for preview
+      const previewContent = `
+        <p><strong>Company Name:</strong> ${document.forms["membershipForm"]["companyName"].value}</p>
+        <p><strong>Company Address:</strong> ${document.forms["membershipForm"]["companyAddress"].value}</p>
+        <p><strong>Telephone:</strong> ${document.forms["membershipForm"]["telephone"].value}</p>
+        <p><strong>Mobile:</strong> ${document.forms["membershipForm"]["mobile"].value}</p>
+        <p><strong>Contact Person:</strong> ${document.forms["membershipForm"]["contactPerson"].value}</p>
+        <p><strong>Position of Contact Person:</strong> ${document.forms["membershipForm"]["contactPersonPosition"].value}</p>
+        <p><strong>Membership Type:</strong> ${document.querySelector('input[name="membershipType"]:checked').value}</p>
+        <p><strong>Company Size:</strong> ${document.querySelector('input[name="companySize"]:checked').value}</p>
+        <p><strong>Date:</strong> ${document.forms["membershipForm"]["date"].value}</p>
+        <p><strong>Position:</strong> ${document.forms["membershipForm"]["position"].value}</p>
+        <p><strong>Units:</strong> ${document.forms["membershipForm"]["units"].value}</p>
+        <p><strong>SQM:</strong> ${document.forms["membershipForm"]["sqm"].value}</p>
+        <p><strong>Cost:</strong> ${document.forms["membershipForm"]["cost"].value}</p>
+        <p><strong>Option 1:</strong> ${document.forms["membershipForm"]["opt1"].value}</p>
+        <p><strong>Option 2:</strong> ${document.forms["membershipForm"]["opt2"].value}</p>
+        <p><strong>Total cost:</strong> ${document.forms["membershipForm"]["tcost"].value}</p>
+        
+      `;
+
+      // Display preview
+      document.getElementById('previewContent').innerHTML = previewContent;
+      document.getElementById('previewContainer').style.display = 'block';
+      document.getElementById('submitButton').style.display = 'none';
+    }
+
+    function editForm() {
+      document.getElementById('previewContainer').style.display = 'none';
+      document.getElementById('submitButton').style.display = 'inline-block';
+    }
+
+    function submitForm() {
+      document.getElementById('submitButton').click();
+    }
+  </script>
+
+</body>
+</html>
