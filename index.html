@@ -44,7 +44,7 @@
     <input type="email" name="email" required><br>
 
 
-    <label for="contactPerson">Contact Person:</label>
+    <label for="contactPerson">Contact Person(Mr./Ms./Mrs.):</label>
     <input type="text" name="contactPerson" required><br>
 
     <label for="contactPersonPosition">Position of Contact Person:</label>
@@ -210,28 +210,8 @@
     <label for="position">Position:</label>
     <input type="text" name="position" required><br>
 
-<!-- ORGANIZED BY -->
-
-    <hr> 
-                <h3>Organized By:</h3> <br>
-                <img src="img/SLAITO.jpg" style="width: 100px; height: 70px;">
-
-                <h3>Joint Event Organizer :</h3> <br>
-                <img src="img/CDC logo-1.png" style="width: 100px; height: 70px;">
-                <img src="img/AS Logo.jpg" style="width: 100px; height: 70px;">
-                
-                <br> <br>
-
-                <h3 style="color: aqua;">CDC EVENTS & TRAVELS PVT. LTD.</h3>
-                <p style="padding-top: 1px;">"LE CUBE", 2nd Floor, No. 130,</p>
-                  <p style="padding-top: 1px;"> High Level Road, Colombo 06, Sri Lanka.</p>
-                    <p style="padding-top: 1px;">Tel: +94 11 251 5786/7</p>
-                      <p style="padding-top: 1px;"> Hotline: +94 76 825 5590</p>
-                        <p style="padding-top: 1px;">E-mail: info@sancharakaudawa.com</p>
-                          <p style="padding-top: 1px;">Web: www.sancharakaudawa.com</p>
-
-    <!-- Preview and Submit -->
-    <button type="button" onclick="showPreview()">Preview</button>
+     <!-- Preview and Submit -->
+    <button type="button" onclick="showPreview()"><h3>Preview</h3></button>
 
     <button type="submit" id="submitButton" style="display: none;">Confirm</button>
   </form>
@@ -245,6 +225,37 @@
     <button type="button" onclick="editForm()">Edit</button>
     <button type="button" onclick="submitForm()">Confirm</button>
   </div>
+
+<!-- ORGANIZED BY -->
+
+    <hr> 
+               <!-- Footer Section -->
+<footer>
+  <!-- Organized By Footer -->
+  <div class="footer-section">
+    <h3>Organized By:</h3>
+    <img src="img/SLAITO.jpg" alt="SLAITO Logo" class="footer-logo">
+  </div>
+
+  <div class="footer-section">
+    <h3>Joint Event Organizer :</h3>
+    <img src="img/CDC logo-1.png" alt="CDC Logo" class="footer-logo">
+    <img src="img/AS Logo.jpg" alt="AS Logo" class="footer-logo">
+  </div>
+
+  <div class="footer-section">
+    <h3 style="color: aqua;">CDC EVENTS & TRAVELS PVT. LTD.</h3>
+    <p>"LE CUBE", 2nd Floor, No. 130,</p>
+    <p>High Level Road, Colombo 06, Sri Lanka.</p>
+    <p>Tel: +94 11 251 5786/7</p>
+    <p>Hotline: +94 76 825 5590</p>
+    <p>E-mail: info@sancharakaudawa.com</p>
+    <p>Web: www.sancharakaudawa.com</p>
+  </div>
+</footer>
+
+
+   
 
   <script>
     function showPreview() {

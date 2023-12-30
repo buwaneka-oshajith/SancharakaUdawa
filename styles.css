@@ -33,12 +33,15 @@ textarea {
 }
 
 button {
-    padding: 10px;
+    padding: 2px;
     background-color: #3498db;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    width: 150px;
+   
+    
   }
 
   button:hover {
@@ -71,7 +74,25 @@ button {
    
 
 }
-
+ /*FOOTER SECTION STYLE */
+ footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    height: 70px;
+    margin-top: 10px; /* Adjust as needed */
+  }
   
 .agile-volt {
     max-width: 800px;
