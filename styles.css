@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url('img/backg.jpg'); 
+    background-image: url('img/backg.jpg');
+    background-position: center;
     color: #fff;
 }
 
@@ -79,7 +80,8 @@ button {
   }
 
   #previewContainer img {
-    max-width: 50%;
+    max-width: 200px;
+    max-height: 80px;
     margin-top: 10px;
   }
 .textbox {
@@ -91,6 +93,18 @@ button {
    
 
 }
+
+.company-size-options label {
+    margin-right: -50px; /* Adjust the margin as needed */
+    margin-left: 120px; /* Adjust the margin as needed */
+    margin-top: -26px;
+  }
+  .radio-buttons label {
+    margin-right: -60px; /* Adjust the margin as needed */
+    margin-left: 120px; /* Adjust the margin as needed */
+    margin-top: -24px;
+  }
+
  /*FOOTER SECTION STYLE */
  footer {
     background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
