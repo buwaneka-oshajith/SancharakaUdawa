@@ -27,6 +27,7 @@
       <h2>SANCHARAKA UDAWA 2024</h2>
   </div>
     <!-- Company Information -->
+    <h3 style="background-color: rgba(0, 225, 255, 0.3); width: 50%;">CONTACT DETAILS</h3>
     <label for="companyName">Company Name:</label>
     <input type="text" name="companyName" required><br>
 
@@ -50,13 +51,130 @@
     <input type="text" name="contactPersonPosition" required><br>
 
     <!-- Membership Information -->
-    <label>Membership Type:</label>
-    <input type="radio" name="membershipType" value="associate" required> Associate Member<br>
-    <input type="radio" name="membershipType" value="nonAssociate" required> Non Associate Member<br>
 
-    <label>Company Size:</label>
-    <input type="radio" name="companySize" value="sme" required> SME<br><br>
-    <input type="radio" name="companySize" value="nonSme" required> Non-SME<br><br>
+    <h3 style="background-color: rgba(0, 225, 255, 0.3); width: 50%;">INVESTMENTS</h3>
+    <div>
+      <label>Membership Type:</label>
+      <div class="radio-buttons">
+        <label >Associate Member  </label><input type="radio" name="membershipType" value="Associate Member" required>
+          <label > Non Associate Membe </label><input type="radio" name="membershipType" value="Non-Associate Member"  required>
+      </div>
+  </div>
+
+    <!-- Stall Prices Information Table-->
+
+    <div class="agile-table">
+      <table>
+          <tr>
+              <th rowspan="2"  style="background-color: rgba(167, 167, 167, 0.4);">Stall</th>
+              <th colspan="2"  style="background-color: rgba(167, 167, 167, 0.4);">Associate</th>
+              <th colspan="2"  style="background-color: rgba(167, 167, 167, 0.4);" >Non-Associate</th>
+          </tr>
+          <tr>
+              <td rowspan="1">Shell</td>
+              <td>Bare</td>
+              <td>Shell</td>
+              <td>Bare</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>46</td>
+              <td>56</td>
+              <td>51</td>
+              <td>63</td>
+          </tr>
+          <tr>
+              <td>9</td>
+              <td>72</td>
+              <td>67</td>
+              <td>80</td>
+              <td>74</td>
+          </tr>
+
+          <tr>
+              <td>9</td>
+              <td>72</td>
+              <td>67</td>
+              <td>80</td>
+              <td>74</td>
+          </tr>
+          <tr>
+              <td colspan="5" style="background-color: rgb(0, 225, 255,0.4);">Out Door Area Blocks</td>
+              
+          </tr>
+          <tr>
+              <td>9</td>
+              <td>72</td>
+              
+          </tr>
+
+          <tr>
+              <td>9</td>
+              <td>72</td>
+              
+          </tr>
+      </table>
+  </div>
+  <br> <br>
+
+  <div class="textbox">
+    <div class="topic">Shell Scheme entitles you to the following:</div>
+    <div class="points">
+        <ul>
+            <li> - Basic Stall Structure / Name Board </li>
+            <li> - One Counter</li>
+            <li> - One 15 AMP Plug Point</li>
+            <li> - One Dust Bin</li>
+            <li> - Two Chairs</li>
+            <li> - Two Spotlights</li>
+        </ul>
+    </div>
+
+    <div class="topic">Indoor Bare Space area unit entitles you to the following:</div>
+    <div class="points">
+        <ul>
+            <li>Bare Space Unit</li>
+            <li>One 15 AMP Plug Point</li>
+          
+        </ul>
+    </div>
+</div>
+<br><br>
+
+    <label>Company Size:</label><br>
+    <label>SME</label><input type="radio" name="companySize" value="sme" required > 
+    <label>Non-SME</label><input type="radio" name="companySize" value="nonSme" required> <br><br>
+    
+
+    <br>
+    <div class="agile-table">
+    <table>
+      <tr>
+          <th style="background-color: rgb(0, 225, 255,0.4);" >Sector</th>
+          <th style="background-color: rgb(0, 225, 255,0.4);" >Criteria</th>
+          <th style="background-color: rgb(0, 225, 255,0.4);" >Medium</th>
+          <th style="background-color: rgb(0, 225, 255,0.4);" >Small</th>
+          <th style="background-color: rgb(0, 225, 255,0.4);" >micro</th>
+      </tr>
+      <tr>
+          <td rowspan="2" style="background-color: rgb(0, 225, 255,0.4);">Service Sector</td>
+          <td>Annual Turn</td>
+          <td>RS251</td>
+          <td>Rs16</td>
+          <td>RS251</td>
+      </tr>
+      <tr>
+          <td>No of Employees</td>
+          <td>RS251</td>
+          <td>Rs16</td>
+          <td>RS251</td>
+      </tr>
+  </table>
+  </div>
+  <br><br>
+
+  <p style="background-color: rgba(1, 217, 255, 0.2); color: aqua; font-size: large;">All prominent locations will cost 35% more than the normal stall cost.
+    Prominent locations are marked pink on the floor plan</p>
 
 
     <!-- Stall Information -->
@@ -70,6 +188,8 @@
     Option 1 <input type="text" name="opt1" > 
     Option 2 <input type="text" name="opt2" >
     Toatal cost of LKR:<input type="number" name="tcost" ></P>
+
+    <h3 style="background-color: rgba(0, 225, 255, 0.3); width: 50%;">PAYMENT DETAILS</h3>
     <p>
       All payments should be made by cheques drawn, in favour of "Sri Lanka Association of Inbound Tour Operators" and handed over to the Exhibition Secretariat, CDC Events, at the address mentioned below. If you wish to send a bank transfer please send to: "Sri Lanka Association Of Inbound Tour Operators" (A/C No. 102002779908, Bank Name - DFCC Bank PLC, Code - 7454, Branch & Code - Fort Super Grade Branch, 111, SWIFT Code - DFCCLKLX)<br>
       We understand that the application fee is non-refundable except in the case (Only) of our application being declined. If accepted, we shall pay utmost attention to booth security and understand that loose security a attract crime will jeopardize our participation future events/shows conducted by the organizers. We hereby apply for joining "Sancharaka Udawa 2024". We agree to abide by the terms of application and exhibition rules and regulations set out by the organizer.
@@ -89,6 +209,26 @@
 
     <label for="position">Position:</label>
     <input type="text" name="position" required><br>
+
+<!-- ORGANIZED BY -->
+
+    <hr> 
+                <h3>Organized By:</h3> <br>
+                <img src="img/SLAITO.jpg" style="width: 100px; height: 70px;">
+
+                <h3>Joint Event Organizer :</h3> <br>
+                <img src="img/CDC logo-1.png" style="width: 100px; height: 70px;">
+                <img src="img/AS Logo.jpg" style="width: 100px; height: 70px;">
+                
+                <br> <br>
+
+                <h3 style="color: aqua;">CDC EVENTS & TRAVELS PVT. LTD.</h3>
+                <p style="padding-top: 1px;">"LE CUBE", 2nd Floor, No. 130,</p>
+                  <p style="padding-top: 1px;"> High Level Road, Colombo 06, Sri Lanka.</p>
+                    <p style="padding-top: 1px;">Tel: +94 11 251 5786/7</p>
+                      <p style="padding-top: 1px;"> Hotline: +94 76 825 5590</p>
+                        <p style="padding-top: 1px;">E-mail: info@sancharakaudawa.com</p>
+                          <p style="padding-top: 1px;">Web: www.sancharakaudawa.com</p>
 
     <!-- Preview and Submit -->
     <button type="button" onclick="previewForm()">Preview</button>
