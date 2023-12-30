@@ -231,7 +231,8 @@
                           <p style="padding-top: 1px;">Web: www.sancharakaudawa.com</p>
 
     <!-- Preview and Submit -->
-    <button type="button" onclick="previewForm()">Preview</button>
+    <button type="button" onclick="showPreview()">Preview</button>
+
     <button type="submit" id="submitButton" style="display: none;">Confirm</button>
   </form>
   </div>
@@ -246,7 +247,7 @@
   </div>
 
   <script>
-    function previewForm() {
+    function showPreview() {
       // Collect form values for preview
       const previewContent = `
         <p><strong>Company Name:</strong> ${document.forms["membershipForm"]["companyName"].value}</p>
@@ -265,24 +266,25 @@
         <p><strong>Option 1:</strong> ${document.forms["membershipForm"]["opt1"].value}</p>
         <p><strong>Option 2:</strong> ${document.forms["membershipForm"]["opt2"].value}</p>
         <p><strong>Total cost:</strong> ${document.forms["membershipForm"]["tcost"].value}</p>
-        
       `;
-
+  
       // Display preview
       document.getElementById('previewContent').innerHTML = previewContent;
+      document.getElementById('membershipForm').style.display = 'none';
       document.getElementById('previewContainer').style.display = 'block';
-      document.getElementById('submitButton').style.display = 'none';
     }
-
+  
     function editForm() {
+      document.getElementById('membershipForm').style.display = 'block';
       document.getElementById('previewContainer').style.display = 'none';
-      document.getElementById('submitButton').style.display = 'inline-block';
     }
-
+  
     function submitForm() {
       document.getElementById('submitButton').click();
     }
   </script>
+  
+
 
 </body>
 </html>
