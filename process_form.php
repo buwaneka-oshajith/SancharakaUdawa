@@ -61,6 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pdf = new TCPDF();
     $pdf->AddPage();
     $pdf->SetFont('aealarabiya', '', 12);
+    $pdf->Cell(0, 10, 'SANCHARAKA UDAWA 2024', 0, 1, 'C');
     $pdf->Cell(0, 10, 'Membership Form', 0, 1, 'C');
 
     

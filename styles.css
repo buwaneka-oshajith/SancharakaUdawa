@@ -20,7 +20,7 @@ form {
 
 input[type="radio"] {
     margin-right: 5px;
-    vertical-align: middle;
+    vertical-align: left;
 }
 
 
@@ -49,13 +49,10 @@ button {
   }
 
   #previewContainer {
-    background-color: rgba(4, 4, 4, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
     text-align: center; /* Center the content horizontally */
+    padding-top: 0%;
 }
 
 #previewContent {
@@ -64,7 +61,27 @@ button {
 
 #previewContainer button {
     margin-top: 10px;
+    width: 150px;
+    height: 50px;
 }
+
+#previewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: Left;
+  }
+
+  #previewContent {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+  }
+
+  #previewContainer img {
+    max-width: 50%;
+    margin-top: 10px;
+  }
 .textbox {
     background-color:  rgb(0, 225, 255,0.4);
     padding-left: 5%;
