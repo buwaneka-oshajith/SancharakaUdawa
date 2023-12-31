@@ -152,10 +152,10 @@ if (!file_exists($sealImage)) {
         $mail->SMTPDebug = 0; // Set to 2 for debugging
         $mail->isSMTP();
         // Set your SMTP configuration here
-        $mail->Host ='mail.aitech.lk';
+        $mail->Host ='mail.SMTP.lk';
         $mail->SMTPAuth = true;
-        $mail->Username ='gayanc@aitech.lk';
-        $mail->Password ='gayan@1234';
+        $mail->Username ='gayanc@SMTP.lk';
+        $mail->Password ='SMTP';
         $mail->SMTPSecure ='tls';
         $mail->Port =587;
 
